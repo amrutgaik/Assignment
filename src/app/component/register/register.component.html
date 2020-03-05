@@ -1,0 +1,43 @@
+<p align="center">register works!</p>
+
+<div class="container">
+
+<div class="from-group">
+        <input type="number" class="form-control" placeholder="Enter id" disabled [(ngModel)]="emp.id">
+</div>
+<br>
+<div class="row">
+<div class="from-group col-md-6">
+  <input type="text" class="form-control" placeholder="Enter firstname" [(ngModel)]="emp.name">
+</div>
+<div class="from-group col-md-6">
+    <input type="text" class="form-control" placeholder="Enter address" [(ngModel)]="emp.address">
+ </div>
+</div>
+<br>
+<div class="from-group">
+  <input type="text" class="form-control" placeholder="Enter designation"  [(ngModel)]="emp.empcode">
+</div>
+<br>
+<div class="row">
+    <div class="from-group col-md-6">
+      <input type="text" class="form-control" placeholder="Enter username" [(ngModel)]="emp.username">
+    </div>
+    <div class="from-group col-md-6">
+        <input type="password" class="form-control" placeholder="Enter password" [(ngModel)]="emp.password">
+     </div>
+</div>
+<br>
+<div class="from-group">
+  <input type="text" class="form-control" placeholder="Enter designation"  [(ngModel)]="emp.role">
+</div>
+<br>
+<div class="from-group">
+  <button class="btn btn-success btn-lg btn-block" [hidden]="shared.isHidden" (click)="submitData(emp)">submit</button>
+</div>
+<br>
+<div class="from-group">
+    <button class="btn btn-warning btn-lg btn-block" [hidden]="shared.resetHide" (click)="resetData()">Reset</button>
+  </div>
+
+</div>

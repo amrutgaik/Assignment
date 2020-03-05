@@ -1,0 +1,40 @@
+<p align="center">SingleData works!</p>
+<div class="container">
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>address</th>
+        <th>username</th>
+        <th>password</th>
+        <th>empcode</th>
+        <th>role</th>
+        <th>edit</th>
+        <th>delete</th>
+      </tr>
+      <tr>
+        <td style="text-align: center"> {{emp.id}}</td>
+        <td style="text-align: center"> {{emp.name}}</td>
+        <td style="text-align: center"> {{emp.address}}</td>
+        <td style="text-align: center"> {{emp.username}}</td>
+        <td style="text-align: center"> {{emp.password}}</td>
+        <td style="text-align: center"> {{emp.empcode}}</td>
+        <td style="text-align: center"> {{emp.role}}</td>
+        <td>
+          <a class="btn" (click)="editData(emp)">
+            <i class="fa fa-edit">
+            </i>
+          </a>
+        </td>
+        <td>
+          <a class="btn" (click)="delete(emp)">
+            <i class="fa fa-trash">
+            </i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

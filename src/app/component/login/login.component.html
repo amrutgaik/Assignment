@@ -1,0 +1,17 @@
+
+<p align="center">login works!</p>
+
+<div class="container">
+
+<div class="from-group">
+        <input type="text" class="form-control" placeholder="Enter uname"  [(ngModel)]="emp.username">
+</div>
+<br>
+<div class="from-group">
+    <input type="password" class="form-control" placeholder="Enter password"  [(ngModel)]="emp.password">
+</div>
+<br>
+<div class="from-group">
+  <button class="btn btn-success btn-lg btn-block"  (click)="login(emp)">Login</button>
+</div>
+
